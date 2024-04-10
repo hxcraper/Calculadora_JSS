@@ -1,55 +1,34 @@
+const txtOp1 = document.getElementById("op1")
+const txtOperador = document.getElementById("operacion")
+const txtOp2 = document.getElementById("op2")
+const btnCalcular = document.getElementById("calcular")
+const pResultado = document.getElementById("resultado")
 
-console.log("wena culiaito")
-// tipos de datos
-let edad = 30;
-let texto = "mi edad es " + edad;
-console.log(texto);
+btnCalcular.addEventListener('click', calcular)
 
-// se puede modificar
-let miVariable = 30;
-miVariable = 12;
-console.log(miVariable)
+function calcular(){
+    const operacion = txtOperador.value
+    const op1 = parseFloat(txtOp1.value)
+    const op2 = parseFloat(txtOp2.value)
 
-// const no se puede modificar luego
-const variableConst = 30;
-// variableConst = 12;
-console.log(variableConst);
+    if(operacion == "+" || operacion == "-" || operacion == "*" || operacion == "/"){
+        let resultado;
+        switch (operacion){
+            case "+":
+                resultado = op1 + op2
+                break;
+            case "-":
+                resultado = op1 - op2
+                break;
+            case "*":
+                resultado = op1 * op2
+                break;
+            case "/":
+                resultado = op1 / op2
 
-
-let op1 = 30, op2 = 20;
-
-console.log("La suma es: " + (op1 + op2));
-console.log("la resta es: " + (op1 - op2));
-
-// condicionales,
-
-// IF
-let miNumero = 10;
-if(miNumero === "6"){ // === hace que sea estricto, en este caso, es falso ya que no son del mismo tipo
-    console.log("Si, mi numero vale 6");
-} else{
-    console.log("No, mi numero no es 6")
-};
-
-let contador = 10;
-while(contador > 0){
-    console.log(contador);
-    contador --;
-};
-
-/*
-for(contador = 0; contador < 10 ; contador++){
-    console.log(contador);
-
+        }
+        pResultado.innerText = "= " + resultado
+    }else{
+        pResultado.innerText = "calculo imposible"
+    }
 }
-
-*/
-
-
-
-
-
-
-
-
-
