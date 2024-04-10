@@ -1,7 +1,11 @@
 body{
     font-family: sans-serif;
     text-align: center;
-};
+    border: 2px solid #000; /* Cambia #000 al color que desees para el borde */
+    padding: 20px; /* Espacio dentro del borde */
+    display: inline-block; /* Esto hará que el borde se ajuste al contenido */
+    
+}
 
 input{
     display: block;
