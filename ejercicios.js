@@ -84,22 +84,52 @@ document.write("Minutos ingresados: " + minutos + " En segundos: " + minutosSegu
 
 */
 
+/*
 let numero1 = prompt("Ingrese un numero: ");
 
 function unidades(numero1){
-    let op1 = numero1 % 10
+    let op1 = numero1 % 10;
     return op1
 };
 
 function decenas(numero1){
-    let op1 = numero1 / 10  
+    let op1 = numero1 / 10;
     return op1
 };
 
 numero1 = parseInt(numero1);
 
-document.write("Decenas" + decenas(numero1));
-document.write("Unidades: " + unidades(numero1));
+document.write("Decenas: " + decenas(numero1));
+document.write("<br>");
+document.write("<br>");
+document.write("Unidades:  " + unidades(numero1));
+
+*/
+
+let cantidadComensales = prompt("Ingrese cantidad de personas que van a almorzar");
+
+function calculoTortilla(cantidadComensales){
+    let papas = (1000 /200);
+    let huevos = 5;
+    let cebolla = 1000 / 300;   
+    let resultado = (papas + huevos + cebolla)
+    return resultado
+};
+
+alert("El total de papas ocupadas es de : " + calculoTortilla.papas());
+alert("El total de huevos ocupadas es de : " + calculoTortilla.huevos());
+alert("El total de cebollas ocupadas es de : " + calculoTortilla.cebolla());
+alert("La cantidad de ingredientes ocupados en gramos es de: " + calculoTortilla(resultado));
+
+
+
+
+
+
+
+
+
+
 
 
 
