@@ -24,12 +24,27 @@ console.log("la resta es: " + (op1 - op2));
 // condicionales,
 
 // IF
-let miNumero = 6;
+let miNumero = 10;
 if(miNumero === "6"){ // === hace que sea estricto, en este caso, es falso ya que no son del mismo tipo
     console.log("Si, mi numero vale 6");
 } else{
     console.log("No, mi numero no es 6")
 };
+
+let contador = 10;
+while(contador > 0){
+    console.log(contador);
+    contador --;
+};
+
+/*
+for(contador = 0; contador < 10 ; contador++){
+    console.log(contador);
+
+}
+
+*/
+
 
 
 
