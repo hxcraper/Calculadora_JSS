@@ -22,7 +22,7 @@ console.log("El area del cuadrado es: " + area + " y el perimetro es: " + perime
 
 let nombre = prompt("Ingresa tu nombre");
 let saludo = ("Buenas tardes, " + nombre);
-alert(saludo);
+document.write(saludo);
 
 */
 
@@ -41,7 +41,7 @@ n1 = parseInt(n1);
 n2 = parseInt(n2);
 n3 = parseInt(n3);
 
-alert("La media de los numeros ingresados es: " + media(n1,n2,n3));
+document.write("La media de los numeros ingresados es: " + media(n1,n2,n3));
 */
 
 // ejercicio 5 kilometros recorridos y litros consumidos
@@ -58,10 +58,11 @@ let km = prompt("Ingrese los kilometros recorridos");
 lt = parseFloat(lt);
 km = parseFloat(km);
 
-alert("El combustible consumido por el coche fue de: " + consumoCombistible(km,lt) + " litros");
+document.write("El combustible consumido por el coche fue de: " + consumoCombistible(km,lt) + " litros");
 */
 
-/*
+/* EJERCICIO 6 HORAS A SEGUNDOS Y MINUTOS A SEGUNDOS
+
 function horasSegundos(hora){
     resultado = (hora * 60 * 60)
     return resultado
@@ -84,7 +85,8 @@ document.write("Minutos ingresados: " + minutos + " En segundos: " + minutosSegu
 
 */
 
-/*
+/* EJERCICIO 7 RESTO Y UNIDADES
+
 let numero1 = prompt("Ingrese un numero: ");
 
 function unidades(numero1){
@@ -104,39 +106,40 @@ document.write("<br>");
 document.write("<br>");
 document.write("Unidades:  " + unidades(numero1));
 
+*/  
+/* EJERCICIO 8 - GRAMOS PARA PLATO
+
+let papa, huevo, cebolla, cantidadComensales;
+
+cantidadComensales = prompt("Ingrese cantidad de comensales");
+papa = cantidadComensales * 200;
+papa = papa/1000; // para pasarlo a kilos
+huevo = papa * 5;
+cebolla = papa * 300;
+
+alert("Cantidad de papas x kilo:" + papa);
+alert("Cantidad de Huevos: " + huevo);
+alert("Cantidad de cebolla x gramos: " + cebolla);
+
+// EJERCICIO 9 - CAMBIAR NUMERO ENTRE VARIABLES.
+
+let varUno = 20;
+let varDos = 30;
+let varTres = varUno;
+varUno = varDos;
+varDos = varTres;
+
+console.log(varUno);
+console.log(varDos);
+
 */
 
-let cantidadComensales = prompt("Ingrese cantidad de personas que van a almorzar");
+let numero = parseInt(prompt("Ingresa un numero: "));
 
-function calculoTortilla(cantidadComensales){
-    let papas = parseInt(1000 /200);
-    let huevos = parseInt(5);
-    let cebolla = parseInt(1000/300);   
-    let resultado = parseInt(papas + huevos + cebolla);
-    return resultado
-};
+function esPar(numero) {
+    let residuo = numero % 2;
+    let esParStrings = ["par", "impar"];
+    return esParStrings[residuo];
+}
 
-alert("El total de papas ocupadas es de : " + calculoTortilla(papas));
-alert("El total de huevos ocupadas es de : " + calculoTortilla(huevos));
-alert("El total de cebollas ocupadas es de : " + calculoTortilla(cebolla));
-alert("La cantidad de ingredientes ocupados en gramos es de: " + calculoTortilla(resultado));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+alert("El número " + numero + " es " + esPar(numero));
