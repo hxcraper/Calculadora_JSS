@@ -132,7 +132,8 @@ varDos = varTres;
 console.log(varUno);
 console.log(varDos);
 
-*/
+
+
 
 let numero = parseInt(prompt("Ingresa un numero: "));
 
@@ -143,3 +144,6 @@ function esPar(numero) {
 }
 
 alert("El número " + numero + " es " + esPar(numero));
+
+*/
+
